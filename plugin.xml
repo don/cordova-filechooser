@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin 
+    xmlns="http://www.phonegap.com/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    id="com.megster.cordova.FileChooser" 
+    version="0.0.0">
+    
+    <engines>
+        <engine name="cordova" version=">=2.8.0" />
+    </engines>
+
+    <name>File Chooser</name>
+
+    <js-module src="www/fileChooser.js" name="FileChooser">
+        <clobbers target="fileChooser" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/widget">        
+            <feature name="FileChooser">
+                <param name="android-package" value="com.megster.cordova.FileChooser"/>
+            </feature> 
+        </config-file> 
+                
+        <source-file src="src/android/FileChooser.java" target-dir="src/com/megster/cordova"/>
+                        
+    </platform>
+    
+</plugin>
