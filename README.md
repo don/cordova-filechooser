@@ -23,6 +23,6 @@ The success callback get the uri of the selected file
 	
 Screenshot
 
-![Screenshot](screenshot.png "Screenshot")
+![Screenshot](filechooser.png "Screenshot")
 
 TODO rename `open` to pick, select, or choose.
