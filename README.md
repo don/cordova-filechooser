@@ -20,5 +20,9 @@ The success callback get the uri of the selected file
 	fileChooser.open(function(uri) {
 		alert(uri);
 	});
+	
+Screenshot
+
+![Screenshot](screenshot.png "Screenshot")
 
 TODO rename `open` to pick, select, or choose.
