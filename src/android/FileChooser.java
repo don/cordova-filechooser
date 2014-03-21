@@ -6,9 +6,9 @@ import android.net.Uri;
 import android.util.Log;
 
 import org.apache.cordova.CordovaArgs;
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.PluginResult;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
 import org.json.JSONException;
 
 public class FileChooser extends CordovaPlugin {
