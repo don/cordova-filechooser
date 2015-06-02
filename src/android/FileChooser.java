@@ -73,6 +73,7 @@ public class FileChooser extends CordovaPlugin {
 
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 PluginResult pluginResult = new PluginResult(PluginResult.Status.NO_RESULT);
+                callback.success("FileChooser::CLOSE");
                 callback.sendPluginResult(pluginResult);
             } else {
                 callback.error(resultCode);
