@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.util.Log;
 import android.os.Bundle;
 
-
 import org.apache.cordova.CordovaArgs;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -51,7 +50,6 @@ public class FileChooser extends CordovaPlugin {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-                
         if (requestCode == PICK_FILE_REQUEST && callback != null) {
 
             if (resultCode == Activity.RESULT_OK) {
