@@ -1,0 +1,31 @@
+{
+  "name": "cordova-filechooser",
+  "version": "0.0.0",
+  "description": "Cordova FileChooser Plugin",
+  "cordova": {
+    "id": "com.megster.cordova.FileChooser",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/don/cordova-filechooser.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=2.8.0"
+    }
+  ],
+  "author": "don",
+  "license": "Apache License, Version 2.0",
+  "bugs": {
+    "url": "https://github.com/don/cordova-filechooser/issues"
+  },
+  "homepage": "https://github.com/don/cordova-filechooser#readme"
+}
