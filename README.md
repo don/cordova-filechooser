@@ -25,4 +25,8 @@ Screenshot
 
 ![Screenshot](filechooser.png "Screenshot")
 
+Supported Platforms:
+- Android
+- Windows (UWP)
+
 TODO rename `open` to pick, select, or choose.
