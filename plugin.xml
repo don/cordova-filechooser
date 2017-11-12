@@ -26,5 +26,11 @@
         <source-file src="src/android/FileChooser.java" target-dir="src/com/megster/cordova"/>
                         
     </platform>
+
+    <platform name="windows">
+        <js-module src="src/windows/FileChooserProxy.js" name="FileChooserProxy">
+            <runs />
+        </js-module>
+    </platform>
     
 </plugin>
