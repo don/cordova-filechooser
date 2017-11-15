@@ -19,7 +19,15 @@ module.exports = {
                 errorCallback(pickerCancelMessage);
                 return;
             }
-            successCallback(file.path);
+
+            // file must be copied to local folder to be accessible by app..
+            const localFolder = Windows.Storage.ApplicationData.current.localFolder;
+            file.copyAsync(localFolder, file.name, Windows.Storage.NameCollisionOption.replaceExisting)
+            .done(function (savedFile) {
+                successCallback('ms-appdata:///local/' + savedFile.name);
+            }, function(err) {
+                errorCallback(pickerErrorMessage);
+            });
         }, function () {
             errorCallback(pickerErrorMessage);
         });
