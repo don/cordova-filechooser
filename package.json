@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-filechooser",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Cordova FileChooser Plugin",
   "main": "index.js",
   "scripts": {
