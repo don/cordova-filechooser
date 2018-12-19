@@ -74,11 +74,9 @@ public class FileChooser extends CordovaPlugin {
                 }
 
             } else if (resultCode == Activity.RESULT_CANCELED) {
-
-                // TODO NO_RESULT or error callback?
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.NO_RESULT);
-                callback.sendPluginResult(pluginResult);
-
+                // keep this string the same as in iOS document picker plugin
+                // https://github.com/iampossible/Cordova-DocPicker
+                callback.error("User canceled.");
             } else {
 
                 callback.error(resultCode);
