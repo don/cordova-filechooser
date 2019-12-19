@@ -7,9 +7,16 @@ module.exports = {
     open: function(successCallback, errorCallback, args) {
         // create picker
         var fileOpenPicker = new Windows.Storage.Pickers.FileOpenPicker();
-
+        var mimes = args[0];
+        var mimeTypesArray = mimes.mime.split(", ");
+        
+        // if no mime types are being passed, then accept all files.
+        if(mimeTypesArray.length < 1) {
+            mimeTypesArray.push('*');
+        }
+        
         // set file mask to all files
-        fileOpenPicker.fileTypeFilter.replaceAll(['*']);
+        fileOpenPicker.fileTypeFilter.replaceAll(mimeTypesArray);
         // and start location to documents library
         fileOpenPicker.suggestedStartLocation = pickerLocationId.documentsLibrary;
 
